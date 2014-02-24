@@ -6,6 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/reveal/css/theme/beige.css">
 </head>
 <body>
+<style>
+.reveal img, .reveal video, .reveal iframe {
+	max-width: 90%;
+	max-height: 75%;
+	background: #333;
+	border:3px solid #333;
+}
+</style>
 	<div class='reveal'><div class='slides'>
 		<!-- SLIDE 1: Intro -->
 		<section>
@@ -17,7 +25,7 @@
 
 		<section>
 				<p>This opportunity is VERY enticing.</p>
-				<p>I've never had a chance to work on such a worthy cause, and I couldn't have requested a more exciting technology stack.</p>	
+				<p>I've never had a chance to work on such a worthy cause, and I can't think of a more exciting technology stack.</p>	
 		</section>
 
 		<section>
@@ -32,23 +40,40 @@
 			</section>
 			<section>
 				<h3>Coding For Fun</h3>
-				<p>Software development is also my favorite hobby.  About 6 months ago I jumped on the nodejs bandwagon and haven't looked back</p>
-				<p>Everything I do now is with Node and Mongo.</p>
+				<p>Software development is my favorite hobby.</p>
+				<p style='font-size:.9em'>About six months ago I jumped on the node.js bandwagon and haven't looked back. Everything I do now is with Node and Mongo.</p>
 			</section>
 		</section>
 		<!-- Portfolio Struggles -->
 		<section>
 			<h3>My Portfolio</h3>
-			<p>Because I primarily deal with internal enterprise applications, I struggled to come up with a portfolio/representation of my work.</p>
+			<p>I mostly deal with internal enterprise applications, so I struggled to come up with a representation of my work.</p>
+			<br/>
 			<p>My solution was to record a few demos of applications I think would apply to the mWater app.</p>
+			
+			<p style='font-size:18px; font-style:italic;' >Use the down arrow to see more info about each app.</p>
 		</section>
 
 		<!-- SLIDE 3: CineProwl Video -->
 		<section>
 			<section>
 				<h2>CineProwl</h2>
-				<p>This first one is a fun one, but it is by far the most applicable.</p>
-
+				<p style='font-size:20px'>This is a personal project, but probably the most applicable to the mWater workflow.</p>
+				<img style='margin:15px' src='images/movieDetails.png'/>
+				<img style='margin:15px' src='images/nowPlaying.png'/>
+				<p style='font-size:16px; margin:0; font-style:italic'>Navigate down to see it in action</p>
+			</section>
+			<section>
+				<h3>CineProwl Demo</h3>
+				<video width="852" height="480" controls>
+					<source src="video/CineProwlDemo_Web_Small.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</section>
+			<section>
+				<h3>Architecture</h3>
+				<p style='font-size:18px; margin:0'>I intentionally tried to over-architect in order to play with cloud offerings</p>
+				<img src='images/cineprowl-architecture.png'/>
 			</section>
 			<section>
 				<h3>Technologies Used</h3>
@@ -71,12 +96,12 @@
 					<source src="video/crmWebParts.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				<span>Sorry about the quality. It's semi-readable in fullscreen</span>
+				<p style='font-size:16px; font-style:italic; margin-top:0' >Sorry about the quality. It's semi-readable in fullscreen</p>
 			</section>
 			<section>
 				<h3>Technologies Used</h3>
 				<ol>
-					<li>I started by writing a RESTful OData web service (in .NET) to expose all of the CRM data.</li>
+					<li>I wrote a RESTful OData web service (in .NET) to expose all of the CRM data.</li>
 					<li>Bing Maps API.  I wrote a javascript helper library to make it a bit more friendly.  I've used that library on quite a few projects now.</li>
 					<li>jQuery DataTables.net</li>
 				</ol>
@@ -99,26 +124,30 @@
 					<li><a target='_blank' href='https://developers.google.com/places/documentation/'>Google Places API</a></li>
 					<li>HTML5 Geolocation</li>
 					<li><a target='_blank' href='https://developers.google.com/maps/documentation/geocoding/'>Google Geocoding API</a></li>
+
 				</ol>
+				
+				<p style='font-size:20px; margin-top:30px'>You can see the <a target='_blank' href='https://www.mynycb.com/style%20library/nycbwebsite/js/placesautocomplete.js'>source code</a> for my places autocomplete plugin live on the <a target='_blank' href='https://www.mynycb.com'>myNycb</a> website.</p>
 			</section>
 		</section>
 
 		<!-- Source Code -->
 		<section>
 			<h2>Source Code</h2>
-			<p>You're welcome to check my <a target='_blank' href='https://github.com/DroopyTersen'>GitHub account</a> for code quality. Please keep in mind anything out there was only ever intended for myself so documentation is a little sparse...</p>
+			<p>You're welcome to check my <a target='_blank' href='https://github.com/DroopyTersen'>GitHub account</a> for code quality. Please keep in mind anything out there was only intended for myself, so documentation is a little sparse...</p>
 			<ul>
 				<li><a target='_blank' href='https://github.com/DroopyTersen/mwater-presentation'>This slideshow</a></li>
-				<li><a target='_blank' href='https://github.com/DroopyTersen/cineprowl-mobile'>CineProwl Mobile</a></li>
 				<li><a target='_blank' href='https://github.com/DroopyTersen/droopy-vlc'>VLC Service (controls video player over Http)</a></li>
 				<li><a target='_blank' href='https://github.com/DroopyTersen/droopy-mongo'>Mongo Helper</a></li>
+				<li><a target='_blank' href='https://github.com/DroopyTersen/cineprowl-mobile'>CineProwl Mobile</a></li>
 			</ul>
 		</section>
 
 		<section>
 			<h4>Thank you!</h4>
-			<p>This picture was taken last month and it was too cheesily appropriate not to include.</p>
-			<img style='width:600px' src='images/drinking.jpg' />
+			<p style='font-size:20px;'>This picture was taken last month and it was too cheesily appropriate not to include.</p>
+			<img style='width:600px; margin-bottom:0' src='images/drinking.jpg' />
+			<p style='font-size:14px; font-style:italic; margin-top:0' >Using my LifeStraw</p>
 
 			<a href='mailto:andrew.petersen15@gmail.com'>andrew.petersen15@gmail.com</a>
 			<span> - 262.930.1118</span>
