@@ -1,4 +1,4 @@
-Reveal.js Portfolio Presentaion for mWater
+Reveal.js Portfolio Presentation for mWater
 =================
 
 
